@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Пути для css, js и изображений-->
+    <!-- блок с meta-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- подключение сss-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.1.1-dist/css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--link(rel="stylesheet", type="text/css"  href="../css/nivo-lightbox/nivo-lightbox.css")-->
+    <!--link(rel="stylesheet", type="text/css"  href="../css/nivo-lightbox/nivo-lightbox-theme.css")-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="../js/modernizr.custom.js"></script>
+    <title>Application
+    </title>
+  </head>
+  <body>
+    <!--section.section.navigation-->
+    <section class="header" id="header">
+      <div class="top-bar">
+        <div class="container">
+          <div class="navigation" id="navigation-scroll">
+            <div class="nav-button">
+              <button id="trigger-overlay" type="button"><i class="fa fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <nav>
+          <ul>
+            <li class="hideit"><a href="home.html">HOME</a></li>
+            <li class="hideit"><a href="aboutUs.html">ABOUT US</a></li>
+            <li class="hideit"><a href="program.html">PROGRAM</a></li>
+            <li class="hideit"><a href="education.html">EDUCATION</a></li>
+            <li class="hideit"><a href="expectations.html">EXPECTATIONS</a></li>
+            <li class="hideit"><a href="contacts.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!--.navWrapper(align='center')-->
+    <!--    .nav.customNavigation-->
+    <!--        ul.navbar-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='home.html') HOME-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='aboutUs.html') ABOUT US-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='program.html') PROGRAM-->
+    <!--            li.nav-item-->
+    <!--                a.navbar-brand(href='home.html')-->
+    <!--                    img.logo(src="../img/logoBlack.png", height='150px', alt='Logo')-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='education.html') EDUCATION-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='expectations.html') EXPECTATIONS-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='contacts.html') CONTACTS-->
+    <div class="applicationWrap"><img class="bgMountain" src="../img/programBG.png">
+      <div class="row sectionText">
+        <div class="col-8 offset-2">
+          <h4 align="center">ICE CLIMBING SKILLS DEVELOPMENT APPLICATION FORM<br>
+            <h6 align="center">Apply for the Progressive Climbing Education (PCE) Technical Skills Development Program for Ice Climbing</h6><br>
+            <p>Purpose: For Mountaineers to apply to represent their branch as participants in our Progressive Climbing Education (PCE) Technical Skills Development Program. This program is designed to include the most highly qualified applicants representing a wide range of branches.</p>
+            <p>
+              <ul>To be eligible for this scholarship, you must meet these criteria:
+                <li>Be a current, active member of the Mountaineers with a history of active volunteer engagement.</li>
+                <li>Commit to attending any of the climbing trips for which you are selected to participate.</li>
+                <li>Commit to sharing the learning from this program by using it to teach classes, develop new classes, or lead field trips that draw on your expertise.</li>
+                <li>The Mountaineers will pay for lodging and expenses for professional guides. You will be responsible for your food and travel expenses, plus any equipment needed for the trip.</li>
+              </ul>
+            </p>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 offset-2">
+          <div class="form">
+            <div class="form-group">
+              <label class="labelStyle">Name</label>
+              <input class="form-control form-control-sm" id="name" type="name" name="name" placeholder="Please enter your name as it appears on your Mountaineers member profile">
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">E-mail</label>
+              <input class="form-control form-control-sm" id="email" type="email" name="email" placeholder="Please enter your email here">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input class="form-control form-control-sm" id="inputAddress" type="text" placeholder="Please enter your address">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input class="form-control form-control-sm" id="inputCity" type="text" placeholder="Please enter your city">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Country</label>
+                <select class="form-control form-control-sm" id="inputState">
+                  <option selected="">Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input class="form-control form-control-sm" id="inputZip" type="text">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">Please select the branch whose climbing program you are most closely affiliated with</label>
+              <div class="form-check">
+                <input class="form-check-input" id="branch1" type="radio" name="branch1" value="option1" checked="">
+                <label class="form-check-label" for="branch1">Bellingham</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="branch2" type="radio" name="branch2" value="option2">
+                <label class="form-check-label" for="branch2">Everett</label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" id="branch3" type="radio" name="branch3" value="option3">
+                <label class="form-check-label" for="branch3">Kitsap</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="branch4" type="radio" name="branch1" value="option1">
+                <label class="form-check-label" for="branch4">Bellingham</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="branch5" type="radio" name="branch2" value="option2">
+                <label class="form-check-label" for="branch5">Everett</label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" id="branch6" type="radio" name="branch3" value="option3">
+                <label class="form-check-label" for="branch6">Kitsap</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">Describe your history as a volunteer for The Mountaineers, especially highlighting elements that might not be readily apparent from your member profile</label>
+              <textarea class="form-control" id="history" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">Name a few specific ice climbing skills you'd like to work on through this program. How do you think a trip like this could help you develop those skills?</label>
+              <textarea class="form-control" id="skills" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">What grade of water ice are you currently comfortable leading?</label>
+              <div class="form-check">
+                <input class="form-check-input" id="skills1" type="radio" name="branch1" value="option1" checked="">
+                <label class="form-check-label" for="skills">Water Ice II or less</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="skills2" type="radio" name="branch2" value="option2">
+                <label class="form-check-label" for="skills2">Water Ice III</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="skills3" type="radio" name="branch3" value="option3">
+                <label class="form-check-label" for="skills">Water Ice IV or greater</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">What grade of rock are you proficient at leading using traditional protection (not sport-climbing)?</label>
+              <div class="form-check">
+                <input class="form-check-input" id="rockGrade1" type="radio" value="option1" checked="">
+                <label class="form-check-label" for="skills">5.7 or less</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="rockGrade2" type="radio" value="option2">
+                <label class="form-check-label" for="skills2">5.8</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="rockGrade3" type="radio" value="option3">
+                <label class="form-check-label" for="skills">5.10 or greater</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">How would you use the skills you develop from this program to further the mission of the Mountaineers, and share your learning with the rest of the organization?</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">Would you be willing to share your learning from this experience with the Progressive Climbing Education Leadership Development Committee?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="option1" checked="">
+                <label class="form-check-label" for="skills">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="option2">
+                <label class="form-check-label" for="skills2">No</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="option3">
+                <label class="form-check-label" for="skills">Unsure</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">Please list 2-3 references who can speak to your volunteer work at the Mountaineers and/or the broader climbing community. Please include email and phone contact information for each reference.</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="labelStyle">Is there anything else you'd like to tell us in support of your application?</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button class="btn btn-secondary" type="submit" value="send">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerWrap">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-content">
+              <h3>Get In Touch</h3>
+              <div class="row">
+                <div class="col-sm-12 social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://telegram.org/" target="_blank"><i class="fa fa-paper-plane"></i></a><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 support-link">
+                  <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--скрипты-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../css/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/classie.js"></script>
+    <!--script(src='../js/nivo-lightbox.min.js')-->
+    <script src="../js/smoothscroll.js"></script>
+  </body>
+</html>

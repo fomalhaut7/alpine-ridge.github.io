@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Пути для css, js и изображений-->
+    <!-- блок с meta-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- подключение сss-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.1.1-dist/css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--link(rel="stylesheet", type="text/css"  href="../css/nivo-lightbox/nivo-lightbox.css")-->
+    <!--link(rel="stylesheet", type="text/css"  href="../css/nivo-lightbox/nivo-lightbox-theme.css")-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="../js/modernizr.custom.js"></script>
+    <title>Contacts
+    </title>
+  </head>
+  <body>
+    <!--section.section.navigation-->
+    <section class="header" id="header">
+      <div class="top-bar">
+        <div class="container">
+          <div class="navigation" id="navigation-scroll">
+            <div class="nav-button">
+              <button id="trigger-overlay" type="button"><i class="fa fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <nav>
+          <ul>
+            <li class="hideit"><a href="home.html">HOME</a></li>
+            <li class="hideit"><a href="aboutUs.html">ABOUT US</a></li>
+            <li class="hideit"><a href="program.html">PROGRAM</a></li>
+            <li class="hideit"><a href="education.html">EDUCATION</a></li>
+            <li class="hideit"><a href="expectations.html">EXPECTATIONS</a></li>
+            <li class="hideit"><a href="contacts.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!--.navWrapper(align='center')-->
+    <!--    .nav.customNavigation-->
+    <!--        ul.navbar-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='home.html') HOME-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='aboutUs.html') ABOUT US-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='program.html') PROGRAM-->
+    <!--            li.nav-item-->
+    <!--                a.navbar-brand(href='home.html')-->
+    <!--                    img.logo(src="../img/logoBlack.png", height='150px', alt='Logo')-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='education.html') EDUCATION-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='expectations.html') EXPECTATIONS-->
+    <!--            li.nav-item-->
+    <!--                a.nav-link(href='contacts.html') CONTACTS-->
+    <div class="contactWrap">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 offset-1 col-lg-5 offset-1 chapterName">
+          <p>CONTACTS</p>
+        </div>
+      </div>
+      <div class="row contactContent"><img class="bgMountain" src="../img/programBG.png">
+        <div class="col-sm-10 offset-1 col-md-4 offset-1 col-lg-4 offset-1 contactPanel">
+          <h6>Our address in US
+            <p>1192 Sheridan Ave, Cody, WY 82414</p>
+            <p>Tel: 307-587-4221</p><br>
+            <h6>Our address in Europe</h6>
+            <p>Siabod Cottage, Capel Curig, Conwy, North Wales LL24 OES, UK</p>
+            <p>Tel: 01690-720386</p><br>
+            <h6>Our address in Chile</h6>
+            <p>Casilla 196, Correo 10 6760323 Las Condes Santiago, Chile</p>
+            <p>Tel: 56-2-2422.8888</p>
+          </h6>
+        </div>
+        <div class="col-sm-10 offset-1 col-md-5 offset-1 col-lg-5 offset-1 contactForm">
+          <form>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input class="form-control" id="email" type="email" placeholder="Please enter your e-mail">
+            </div>
+            <div class="form-group">
+              <label for="name">E-mail</label>
+              <input class="form-control" id="name" type="name" placeholder="Please enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="location">Location
+                <select class="form-control" id="location">
+                  <option>Alps</option>
+                  <option>Andes</option>
+                  <option>Himalayan</option>
+                  <option>Caucasus</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="textArea">Leave us a message</label>
+              <input class="form-control" id="textArea" type="textArea" placeholder="Please enter the content of your request">
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="attachFile">You can attach any documentation if it is nessesary</label>
+                <input class="form-control-file" id="attachFile" type="file">
+              </div>
+            </form>
+            <button class="btn btn-secondary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerWrap">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-content">
+              <h3>Get In Touch</h3>
+              <div class="row">
+                <div class="col-sm-12 social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://telegram.org/" target="_blank"><i class="fa fa-paper-plane"></i></a><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 support-link">
+                  <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--скрипты-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../css/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/classie.js"></script>
+    <!--script(src='../js/nivo-lightbox.min.js')-->
+    <script src="../js/smoothscroll.js"></script>
+  </body>
+</html>
